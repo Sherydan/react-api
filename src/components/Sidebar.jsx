@@ -24,7 +24,7 @@ const Sidebar = () => {
             };
             fetchNews();
             // added a delay because the api only allws 1 call per sec and thus crested the error when loading the page when both calls were made at the same time
-           }, 1500)
+           }, 1700)
         
         
     }, []);
@@ -34,13 +34,14 @@ const Sidebar = () => {
        
     return (
         <div>
-            
+            {/* create news items only of news is not null */}
             {news && (
-                <div className="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
+                <div className="d-flex flex-column align-items-stretch flex-shrink-0 sidebar-container ">
+                    {/* loop through news and create a card for each one */}
                     {news.map((item) => (
                         
                         // create bootstrap card with image and title
-                        <div key={news._id} className="card my-2">
+                        <div key={news._id} className="card my-2 sidebar-card">
                             <img
                                 src={item.media}
                                 className="card-img-top"

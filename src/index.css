@@ -1,5 +1,21 @@
-a{
+a {
     text-decoration: none;
-    
 }
 
+@font-face {
+    font-family: khandregular;
+    src: url(./assets/fonts/Khand-Regular.ttf);
+}
+
+body {
+    font-family: khandregular;
+    background-color: rgb(28, 26, 26);
+}
+
+.sidebar-card {
+    background-color: rgb(28, 26, 26);
+    color: white;
+
+    -webkit-box-shadow: 5px 5px 7px 0px rgba(244, 121, 56, 0.31);
+    box-shadow: 5px 5px 7px 0px rgba(244, 121, 56, 0.31);
+}

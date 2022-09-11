@@ -1,17 +1,21 @@
 import React from "react";
 
+
 import Sidebar from "../components/Sidebar";
-const Newslist = (props) => {
-    
+const Newslist = (props) => {    
     return (
         <div>
+
             <div className="container">
                 <div className="row">
                     <div className="col-md-9">
                         <ul className="list-group">
                             <li className="list-group-item">
+                                {/* loop through news only if is not null */}
                                 {(props.news && 
+                                    
                                     props.news.map((item) => (
+                                    
                                     <div key={props.news._id} className="row mb-4">
                                         <div className="col-md-3">
                                             <a
