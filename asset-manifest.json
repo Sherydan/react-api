@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-api/static/css/main.a09bb2fb.css",
+    "main.js": "/react-api/static/js/main.a672c57c.js",
+    "static/media/Khand-Regular.ttf": "/react-api/static/media/Khand-Regular.ee6c1cc8936bc1f84058.ttf",
+    "index.html": "/react-api/index.html",
+    "main.a09bb2fb.css.map": "/react-api/static/css/main.a09bb2fb.css.map",
+    "main.a672c57c.js.map": "/react-api/static/js/main.a672c57c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a09bb2fb.css",
+    "static/js/main.a672c57c.js"
+  ]
+}
