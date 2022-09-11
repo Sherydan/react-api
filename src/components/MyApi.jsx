@@ -1,6 +1,7 @@
 import News from "../layout/News";
 import Header from "../layout/Header";
 import React, { useState } from "react";
+import Herocard from "../components/Herocard";
 const MyApi = () => {
     const [news, setNews] = useState([]);
     const [search, setSearch] = useState("");
@@ -34,7 +35,7 @@ const MyApi = () => {
     return (
         <div>
             {news && <Header search={search} setSearch={setSearch}/>}
-
+            <div className="container"><Herocard news={news[0]} /></div>
             {filteredSearch && <News news={filteredSearch} />}
         </div>
     );
