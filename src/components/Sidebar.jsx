@@ -1,211 +1,59 @@
 import React from "react";
 
 const Sidebar = () => {
-    return (
-        <div>
-            <div
-                className="d-flex flex-column align-items-stretch flex-shrink-0 bg-white"
-                
-            >
-                <a
-                    href="/"
-                    className="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom"
-                >
-                    <svg className="bi pe-none me-2" width="30" height="24">
-                        
-                    </svg>
-                    <span className="fs-5 fw-semibold">List group</span>
-                </a>
-                <div className="list-group list-group-flush border-bottom scrollarea">
-                    <a
-                        href="#"
-                        className="list-group-item list-group-item-action active py-3 lh-sm"
-                        aria-current="true"
-                    >
-                        <div className="d-flex w-100 align-items-center justify-content-between">
-                            <strong className="mb-1">
-                                List group item heading
-                            </strong>
-                            <small>Wed</small>
-                        </div>
-                        <div className="col-10 mb-1 small">
-                            Some placeholder content in a paragraph below the
-                            heading and date.
-                        </div>
-                    </a>
-                    <a
-                        href="#"
-                        className="list-group-item list-group-item-action py-3 lh-sm"
-                    >
-                        <div className="d-flex w-100 align-items-center justify-content-between">
-                            <strong className="mb-1">
-                                List group item heading
-                            </strong>
-                            <small className="text-muted">Tues</small>
-                        </div>
-                        <div className="col-10 mb-1 small">
-                            Some placeholder content in a paragraph below the
-                            heading and date.
-                        </div>
-                    </a>
-                    <a
-                        href="#"
-                        className="list-group-item list-group-item-action py-3 lh-sm"
-                    >
-                        <div className="d-flex w-100 align-items-center justify-content-between">
-                            <strong className="mb-1">
-                                List group item heading
-                            </strong>
-                            <small className="text-muted">Mon</small>
-                        </div>
-                        <div className="col-10 mb-1 small">
-                            Some placeholder content in a paragraph below the
-                            heading and date.
-                        </div>
-                    </a>
+    // // fetch api
+    // const [news, setNews] = React.useState([]);
+   
 
-                    <a
-                        href="#"
-                        className="list-group-item list-group-item-action py-3 lh-sm"
-                        aria-current="true"
-                    >
-                        <div className="d-flex w-100 align-items-center justify-content-between">
-                            <strong className="mb-1">
-                                List group item heading
-                            </strong>
-                            <small className="text-muted">Wed</small>
-                        </div>
-                        <div className="col-10 mb-1 small">
-                            Some placeholder content in a paragraph below the
-                            heading and date.
-                        </div>
-                    </a>
-                    <a
-                        href="#"
-                        className="list-group-item list-group-item-action py-3 lh-sm"
-                    >
-                        <div className="d-flex w-100 align-items-center justify-content-between">
-                            <strong className="mb-1">
-                                List group item heading
-                            </strong>
-                            <small className="text-muted">Tues</small>
-                        </div>
-                        <div className="col-10 mb-1 small">
-                            Some placeholder content in a paragraph below the
-                            heading and date.
-                        </div>
-                    </a>
-                    <a
-                        href="#"
-                        className="list-group-item list-group-item-action py-3 lh-sm"
-                    >
-                        <div className="d-flex w-100 align-items-center justify-content-between">
-                            <strong className="mb-1">
-                                List group item heading
-                            </strong>
-                            <small className="text-muted">Mon</small>
-                        </div>
-                        <div className="col-10 mb-1 small">
-                            Some placeholder content in a paragraph below the
-                            heading and date.
-                        </div>
-                    </a>
-                    <a
-                        href="#"
-                        className="list-group-item list-group-item-action py-3 lh-sm"
-                        aria-current="true"
-                    >
-                        <div className="d-flex w-100 align-items-center justify-content-between">
-                            <strong className="mb-1">
-                                List group item heading
-                            </strong>
-                            <small className="text-muted">Wed</small>
-                        </div>
-                        <div className="col-10 mb-1 small">
-                            Some placeholder content in a paragraph below the
-                            heading and date.
-                        </div>
-                    </a>
-                    <a
-                        href="#"
-                        className="list-group-item list-group-item-action py-3 lh-sm"
-                    >
-                        <div className="d-flex w-100 align-items-center justify-content-between">
-                            <strong className="mb-1">
-                                List group item heading
-                            </strong>
-                            <small className="text-muted">Tues</small>
-                        </div>
-                        <div className="col-10 mb-1 small">
-                            Some placeholder content in a paragraph below the
-                            heading and date.
-                        </div>
-                    </a>
-                    <a
-                        href="#"
-                        className="list-group-item list-group-item-action py-3 lh-sm"
-                    >
-                        <div className="d-flex w-100 align-items-center justify-content-between">
-                            <strong className="mb-1">
-                                List group item heading
-                            </strong>
-                            <small className="text-muted">Mon</small>
-                        </div>
-                        <div className="col-10 mb-1 small">
-                            Some placeholder content in a paragraph below the
-                            heading and date.
-                        </div>
-                    </a>
-                    <a
-                        href="#"
-                        className="list-group-item list-group-item-action py-3 lh-sm"
-                        aria-current="true"
-                    >
-                        <div className="d-flex w-100 align-items-center justify-content-between">
-                            <strong className="mb-1">
-                                List group item heading
-                            </strong>
-                            <small className="text-muted">Wed</small>
-                        </div>
-                        <div className="col-10 mb-1 small">
-                            Some placeholder content in a paragraph below the
-                            heading and date.
-                        </div>
-                    </a>
-                    <a
-                        href="#"
-                        className="list-group-item list-group-item-action py-3 lh-sm"
-                    >
-                        <div className="d-flex w-100 align-items-center justify-content-between">
-                            <strong className="mb-1">
-                                List group item heading
-                            </strong>
-                            <small className="text-muted">Tues</small>
-                        </div>
-                        <div className="col-10 mb-1 small">
-                            Some placeholder content in a paragraph below the
-                            heading and date.
-                        </div>
-                    </a>
-                    <a
-                        href="#"
-                        className="list-group-item list-group-item-action py-3 lh-sm"
-                    >
-                        <div className="d-flex w-100 align-items-center justify-content-between">
-                            <strong className="mb-1">
-                                List group item heading
-                            </strong>
-                            <small className="text-muted">Mon</small>
-                        </div>
-                        <div className="col-10 mb-1 small">
-                            Some placeholder content in a paragraph below the
-                            heading and date.
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    );
+    // const getNews = async () => {
+    //        const url = `https://free-news.p.rapidapi.com/v1/search?q=warcraft&lang=en`;
+    //        const options = {
+    //            method: 'GET',
+    //            headers: {
+    //                'X-RapidAPI-Key': '3f05cf40c2msha439dcea1f48356p1be3dcjsnca91708a52d5',
+    //                'X-RapidAPI-Host': 'free-news.p.rapidapi.com'
+    //            }
+    //        };
+    //        const response = await fetch(url, options);
+    //        const data = await response.json();
+    //        setNews(data.articles);
+    //        console.log(data.articles);
+    //    }
+    //    getNews();
+       
+
+    //    React.useEffect(() => {
+    //       getNews();
+    //    }, []);
+    // return (
+    //     <div>
+    //         {news && (
+    //             <div className="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
+    //             {news.map((item) => (
+    //                 // create bootstrap card with image and title
+    //                 <div className="card my-2">
+    //                     <img
+    //                         src={item.media}
+    //                         className="card-img-top"
+    //                         alt="..."
+    //                     />
+    //                     <div className="card-body">
+    //                         <h5 className="card-title">{item.title}</h5>
+                            
+    //                         <div className="text-center">
+    //                             <a href={item.url} className="btn btn-primary" target="_blank" rel="noreferrer">
+    //                                 Read more...
+    //                             </a>
+    //                         </div>
+    //                     </div>
+    //                 </div>
+    //             ))}
+    //         </div>
+    //         )}
+
+            
+    //     </div>
+    // );
 };
 
 export default Sidebar;

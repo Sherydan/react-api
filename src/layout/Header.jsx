@@ -1,4 +1,5 @@
-const Header = () => {
+import React from "react";
+const Header = ({search, setSearch}) => {
     return (
         <>
             <nav className="py-2 bg-light border-bottom">
@@ -6,7 +7,7 @@ const Header = () => {
                     <ul className="nav me-auto">
                         <li className="nav-item">
                             <a
-                                href="#"
+                                href="localhost:3000"
                                 className="nav-link link-dark px-2 active"
                                 aria-current="page"
                             >
@@ -14,34 +15,34 @@ const Header = () => {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="#" className="nav-link link-dark px-2">
+                            <a href="localhost:3000" className="nav-link link-dark px-2">
                                 Features
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="#" className="nav-link link-dark px-2">
+                            <a href="localhost:3000" className="nav-link link-dark px-2">
                                 Pricing
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="#" className="nav-link link-dark px-2">
+                            <a href="localhost:3000" className="nav-link link-dark px-2">
                                 FAQs
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="#" className="nav-link link-dark px-2">
+                            <a href="localhost:3000" className="nav-link link-dark px-2">
                                 About
                             </a>
                         </li>
                     </ul>
                     <ul className="nav">
                         <li className="nav-item">
-                            <a href="#" className="nav-link link-dark px-2">
+                            <a href="localhost:3000" className="nav-link link-dark px-2">
                                 Login
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="#" className="nav-link link-dark px-2">
+                            <a href="localhost:3000" className="nav-link link-dark px-2">
                                 Sign up
                             </a>
                         </li>
@@ -65,10 +66,13 @@ const Header = () => {
                         role="search"
                     >
                         <input
+                            value={search}
                             type="search"
                             className="form-control"
                             placeholder="Search..."
                             aria-label="Search"
+                           onChange={(e) => setSearch(e.target.value)}
+                            
                         />
                     </form>
                 </div>

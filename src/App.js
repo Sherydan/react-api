@@ -1,14 +1,12 @@
-import Header from "./layout/Header";
+
 import Footer from "./layout/Footer"
-import News from "./layout/News";
+import MyApi from "./components/MyApi";
 
 function App() {
   return (
     <div className="App">
-        <Header/>
-        <News/>
-
-        <Footer/>
+            <MyApi/>
+            <Footer/>
     </div>
   );
 }
