@@ -10,8 +10,8 @@ const Newslist = (props) => {
                     <div className="col-md-9">
                         <ul className="list-group">
                             <li className="list-group-item">
-                                
-                                {props.news.map((item) => (
+                                {(props.news && 
+                                    props.news.map((item) => (
                                     <div className="row mb-4">
                                         <div className="col-md-3">
                                             <a
@@ -65,7 +65,10 @@ const Newslist = (props) => {
                                             </ul>
                                         </div>
                                     </div>
-                                ))}
+                                ))
+                                
+                                )}
+                                
                                 
                             </li>
                         </ul>
