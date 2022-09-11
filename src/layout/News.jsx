@@ -12,7 +12,7 @@ const Newslist = (props) => {
                             <li className="list-group-item">
                                 {(props.news && 
                                     props.news.map((item) => (
-                                    <div className="row mb-4">
+                                    <div key={props.news._id} className="row mb-4">
                                         <div className="col-md-3">
                                             <a
                                                 href={item.link}
