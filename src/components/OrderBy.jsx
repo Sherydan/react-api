@@ -31,6 +31,7 @@ const OrderBy = ({ sort, setSort }) => {
                                     <a
                                         className="dropdown-item"
                                         href="localhots"
+                                        
                                         onClick={handleSort}
                                     >
                                         Newest
@@ -40,7 +41,7 @@ const OrderBy = ({ sort, setSort }) => {
                                     <a
                                         className="dropdown-item"
                                         href="localhost"
-                                        value={sort}
+                                        
                                         onClick={handleSort}
                                     >
                                         Oldest

@@ -1,10 +1,10 @@
 import React from "react";
 
-const Herocard = (props) => {
+const Herocard = ({news}) => {
     return (
         <div>
             {/* do something only if props.news is not null */}
-            {props.news && (
+            {news && (
                 <div>
                     {/*  create a card for news items */}
                     <div
@@ -13,21 +13,21 @@ const Herocard = (props) => {
 
                         style={{
                             
-                            backgroundImage: `url(${props.news.media})`,
+                            backgroundImage: `url(${news.media})`,
                             opacity: "0.8",
                             backgroundSize: "cover",
                         }}
                     >
                         <div className="col-md-6 px-0">
                             <h1 className="display-4 fst-italic">
-                                {props.news.title}
+                                {news.title}
                             </h1>
                             <p className="lead my-3">
-                                {props.news.description}
+                                {news.description}
                             </p>
                             <p className="lead mb-0">
                                 <a
-                                    href={props.news.link}
+                                    href={news.link}
                                     className="text-white fw-bold"
                                     target="_blank"
                                     rel="noreferrer"

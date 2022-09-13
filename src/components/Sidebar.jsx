@@ -1,10 +1,11 @@
-import React from "react";
+import { useEffect, useState } from "react";
+
 
 const Sidebar = () => {
     // fetch api
-    const [news, setNews] = React.useState([]);
+    const [news, setNews] = useState([]);
 
-    React.useEffect(() => {
+    useEffect(() => {
 
         setTimeout(()=>{
             const fetchNews = async () => {
