@@ -1,6 +1,6 @@
 import News from "../layout/News";
 import Header from "../layout/Header";
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import Herocard from "../components/Herocard";
 import OrderBy from "../components/OrderBy";
 const MyApi = () => {
@@ -8,7 +8,7 @@ const MyApi = () => {
     const [search, setSearch] = useState("");
     const [sort, setSort] = useState("");
 
-    React.useEffect(() => {
+    useEffect(() => {
         // fetch using async await
         const fetchNews = async () => {
             const response = await fetch(
@@ -32,6 +32,8 @@ const MyApi = () => {
         fetchNews();
     }, []);
 
+
+    // SORT SECTION
     let filteredSearch = [];
     // if news is not empty, filter the news array
     if (news) {
@@ -47,14 +49,17 @@ const MyApi = () => {
             });
         }
 
+         // END SORT SECTION
+
+
+         
         // filter news by search input
         filteredSearch = news.filter((item) => {
             return item.title.toLowerCase().includes(search.toLowerCase());
         });
     }
 
-    
-
+   
 
     return (
         <div>
